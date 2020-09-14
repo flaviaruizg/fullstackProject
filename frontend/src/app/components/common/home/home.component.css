@@ -1,0 +1,309 @@
+/*Banner area*/
+
+.site-main.site-banner {
+    margin: auto;
+}
+
+.banner-img {
+    width: 40%;
+    height: 30%;
+}
+
+.img {
+    width: 70%;
+    height: 60%;
+    align-items: flex-end;
+    margin-left: 20%;
+}
+
+.title-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.circle {
+    border-radius: 61% 39% 100% 0% / 0% 73% 27% 100%;
+    background: linear-gradient(35deg, transparent 20%, #149279);
+    position: absolute;
+}
+
+.circle.one {
+    width: 500px;
+    height: 800px;
+    bottom: 10px;
+    left: 16px;
+    z-index: -10;
+}
+
+.site-title {
+    margin-top: 10%;
+    padding-left: 5%;
+}
+
+.title-text {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 19vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-title h1 {
+    font-size: 3.5rem;
+}
+
+.site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-banner.banner-img {
+    justify-content: space-around;
+}
+
+
+/*About area*/
+
+.about-area {
+    padding: 8rem 5rem;
+}
+
+.about-title h2 {
+    font-weight: 400;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 18px;
+}
+
+.para {
+    font-size: 15px;
+}
+
+.about-area.about-title h2>span {
+    display: block;
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #2193b0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .5s;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+    background-color: #007991;
+}
+
+p.para {
+    color: #333;
+    font: normal 500 16px/21px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*service area*/
+
+.card-title {
+    margin-top: 10px;
+}
+
+.card-body {
+    margin-top: 10px;
+}
+
+.services-area {
+    padding: 1rem 2rem;
+}
+
+.services-title {
+    padding: 0 14rem;
+}
+
+.services-title h1 {
+    font-size: 46px;
+}
+
+.card {
+    background: rgba(249, 255, 255, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+}
+
+.card:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.imageC {
+    width: 80px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 12px;
+}
+
+
+/*carousel*/
+
+
+/*.suscribe {
+    background-color: #2193b0;
+    height: 400px;
+}
+
+input {
+    margin: 20%;
+}*/
+
+
+/*footer*/
+
+.col_white_amrc {
+    color: #FFF;
+}
+
+footer {
+    width: 100%;
+    background-color: #2193b0;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+}
+
+.pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+    color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fleft {
+    float: left;
+}
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+    display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+    margin-top: 5px;
+}
+
+.bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+    display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 5%;
+}
+
+
+/*about*/
+
+.about {
+    margin-top: 10%;
+}
+
+.cartas {
+    margin-top: 5%;
+}

@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let book of books">
+                        <th scope="row">{{book.id}}</th>
+                        <td>{{book.author}}</td>
+                        <td>{{book.title}}</td>
+                        <td>
+                            <button type="button" class="btn btn-warning" routerLink="/books/form/{{book.id}}">Update</button>
+                            <button type="button" class="btn btn-danger" (click)="bookDelete(book.id)" routerLink="/books/delete/{{book.id}}">Delete</button>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

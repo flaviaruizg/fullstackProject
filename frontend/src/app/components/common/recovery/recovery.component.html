@@ -1,0 +1,43 @@
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12">
+            <h2>Recover your password</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12">
+            <form [formGroup]="formRecovery" (ngSubmit)="recoverPassword()" *ngIf="isLoaded">
+                <div class="form-group">
+                    <label for="email"> Email <span class="text-danger">*</span></label>
+                    <input type="email" formControlName="email" class="form-control" id="email">
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" [disabled]="formRecovery.invalid" class="btn btn-dark btn-block">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="container mt-5 mb-5">
+    <div class="justify-content-center">
+        <div class="col-md4 col-sm-12 text-center">
+            <h2>Password Recovery</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12">
+            <form [formGroup]="formRecovery " (ngSubmit)="recoverPassword() " *ngIf="isLoaded ">
+                <div class="form-group ">
+                    <input type="email " formControlName="email " class="form-control " id="email ">
+                    <span class="text-danger "></span>
+                </div>
+                <div class="form-group ">
+                    <button type="submit " class="btn btn-dark btn-block ">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>-->

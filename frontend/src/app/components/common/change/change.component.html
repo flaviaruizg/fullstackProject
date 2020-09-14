@@ -1,0 +1,27 @@
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12">
+            <h2>Password Recovery</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12">
+            <form [formGroup]="formChangerPassword" (ngSubmit)="passwordChanger()" *ngIf="isLoaded">
+                <div class="formGroup">
+                    <input type="password" formControlName="password" id="password" class="form-control">
+                    <span class="text-danger" *ngIf="formChangerPassword.get('password').status != 'VALID' && formChangerPassword.get('password').touched"> Dates required</span>
+                </div>
+                <div class="formGroup">
+                    <input type="password" formControlName="repeatPassword" id="repeatPassword" class="form-control">
+                    <span class="text-danger" *ngIf="formChangerPassword.get('repeatPassword').status != 'VALID' && formChangerPassword.get('repeatPassword').touched"> Dates required</span>
+                </div>
+                <div class="formGroup">
+                    <button type="submit" class="btn btn-dark">Change</button>
+
+                </div>
+                <span class="text-danger" *ngIf="message">{{message}}</span>
+
+            </form>
+        </div>
+    </div>
+</div>

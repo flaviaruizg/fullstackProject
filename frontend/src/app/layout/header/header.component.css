@@ -1,0 +1,33 @@
+.header-nav {
+    background: transparent;
+    /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to left, #78ffd6, #007991);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+    margin: 10;
+    display: inline-flex;
+}
+
+.nav-link {
+    color: black !important;
+    margin: 0 20px;
+}
+
+.signup-btn {
+    top: 5px;
+    left: 200%;
+    position: absolute;
+    text-decoration: none;
+    color: black !important;
+    border: 2px solid #2193b0;
+    border-radius: 40px;
+}
+
+.signup-btn span {
+    display: block;
+    padding: 3px 22px;
+}
